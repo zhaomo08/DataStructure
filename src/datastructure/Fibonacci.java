@@ -1,13 +1,22 @@
-package DataStructure;
+package datastructure;
 
 import utils.TimeTool;
 
+/**
+ * @author zhaomo
+ */
 public class Fibonacci {
     /** 0 1 2 3 4 5 6 7     从2 开始  如果是2  加一次 0+1   如果是 3  加两次 0+1=1 1+1 =2  如果是 加三次   4 0+1=1 1+1=2  1+2 =3
      *  0 1 1 2 3 5 8 13......
      */
 
     // 第一种递归
+
+    /**
+     *
+     * @param n
+     * @return
+     */
     public static int fib(int n){
         if (n<=1){
             return n;

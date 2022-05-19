@@ -1,6 +1,9 @@
-package DataStructure;
+package datastructure;
 
-public class recursionSum {
+/**
+ * @author zhaomo
+ */
+public class RecursionSum {
     public static int sum(int[] arr){
         return sum(arr,0);
     }
