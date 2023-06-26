@@ -2,7 +2,6 @@ package imooc;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
 
 /**
  * @author jiacheng
@@ -74,7 +73,11 @@ public class AlgoFrame extends JFrame {
             AlgoVisHelper.setStrokeWidth(g2d,1);
             AlgoVisHelper.setColor(g2d,Color.RED);
             for (Circle circle : circles) {
-                AlgoVisHelper.strokeCircle(g2d,circle.x,circle.y,circle.getR());
+                if (!circle.isFilled) {
+                    AlgoVisHelper.strokeCircle(g2d, circle.x, circle.y, circle.getR());
+                } else {
+                    AlgoVisHelper.fillCircle(g2d, circle.x, circle.y, circle.getR());
+                }
             }
 
 
